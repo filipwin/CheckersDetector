@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file keeps HSV value that is initialized when program is run. It 
+	is overwritten with new last values after program is terminated. -->
+<hsv>
+	<board>
+		<hueStart>20</hueStart> <!-- range: 0-180 -->
+		<hueStop>50</hueStop>
+		<satStart>90</satStart> <!-- range: 0-255 -->
+		<satStop>255</satStop>
+		<valStart>160</valStart> <!-- range: 0-255 -->
+		<valStop>255</valStop>
+	</board>
+
+	<p1>
+		<hueStart>35</hueStart>
+		<hueStop>165</hueStop>
+		<satStart>40</satStart>
+		<satStop>160</satStop>
+		<valStart>80</valStart>
+		<valStop>130</valStop>
+	</p1>
+
+	<p2>
+		<hueStart>100</hueStart>
+		<hueStop>255</hueStop>
+		<satStart>230</satStart>
+		<satStop>255</satStop>
+		<valStart>110</valStart>
+		<valStop>180</valStop>
+	</p2>
+</hsv>
+ 

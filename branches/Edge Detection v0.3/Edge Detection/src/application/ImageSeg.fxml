@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.ImageSegController">
+	<top>
+		<VBox>
+   <children>
+   			<HBox alignment="CENTER" spacing="10">
+   				<padding>
+   					<Insets bottom="10" top="10" />
+   				</padding>
+      <children>
+      				<CheckBox fx:id="canny" onAction="#cannySelected" text="Edge detection" />
+      				<Label text="Canny Threshold" />
+      				<Slider fx:id="threshold" disable="true" />
+      </children>
+   			</HBox>
+   			<Separator />
+   			<HBox alignment="CENTER" spacing="10">
+   				<padding>
+   					<Insets bottom="10" top="10" />
+   				</padding>
+      <children>
+      				<CheckBox fx:id="dilateErode" onAction="#dilateErodeSelected" text="Background removal" />
+      				<CheckBox fx:id="inverse" disable="true" text="Invert" />
+      </children>
+   			</HBox>
+   			<Separator />
+   </children>
+		</VBox>
+	</top>
+	<center>
+		<VBox alignment="CENTER">
+			<padding>
+				<Insets left="10" right="10" />
+			</padding>
+   <children>
+   			<ImageView fx:id="originalFrame" />
+   </children>
+		</VBox>
+	</center>
+	<bottom>
+		<HBox alignment="CENTER">
+			<padding>
+				<Insets bottom="25" left="25" right="25" top="25" />
+			</padding>
+   <children>
+   			<Button fx:id="cameraButton" alignment="center" disable="true" onAction="#startCamera" text="Start camera" />
+            <Button fx:id="saveButton" mnemonicParsing="false" onAction="#saveData" text="Save Data">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+   </children>
+		</HBox>
+	</bottom>
+</BorderPane>
